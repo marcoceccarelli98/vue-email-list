@@ -7,6 +7,7 @@ createApp({
     return {
       url: "https://flynn.boolean.careers/exercises/api/random/mail",
       emailList: [],
+      num: 10,
     };
   },
 
@@ -35,8 +36,8 @@ createApp({
     },
   },
 
-  created() {
-    this.getEmails(10);
+  async created() {
+    await this.getEmails(this.num);
     console.log(this.emailList);
   },
 }).mount("#app");

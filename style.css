@@ -1,0 +1,22 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+}
+
+ul {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+}
